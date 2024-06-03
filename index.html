@@ -3,46 +3,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@200;400;700&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
     <title>Movie Magazine</title>
   </head>
-  <header>
-    <nav class="nav-bar">
-      <h1>MovieMagazine</h1>
-      <div class="nav-links">
-        <a href="">Movies</a>
-        <a href="">Movies</a>
-        <a href="">Movies</a>
-      </div>
-    </nav>
-  </header>
   <body>
-    <main class="card-container">
-      <div class="movie-container" id="movie-container"></div>
-    </main>
+    <header>
+      <nav class="nav-bar">
+        <h1 class="logo">Movie<span class="logo-style">M</span>agazine</h1>
+        <div class="nav-links">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/erik-persson-081128222/"
+            >Linkedin</a
+          >
+          <a target="_blank" href="https://github.com/senderman72">Github</a>
+          <a href="">Movies</a>
+        </div>
+      </nav>
+    </header>
+    <div class="maincontent">
+      <div class="sidebar">
+        <h2>Search</h2>
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search for movies..."
+        />
+        <h2>Categories</h2>
+        <ul class="category-list">
+          <li><a href="#" data-category="action">Action</a></li>
+          <li><a href="#" data-category="drama">Drama</a></li>
+          <li><a href="#" data-category="comedy">Comedy</a></li>
+          <li><a href="#" data-category="horror">Horror</a></li>
+          <li><a href="#" data-category="romance">Romance</a></li>
+          <li><a href="#" data-category="sci-fi">Sci-Fi</a></li>
+          <li><a href="#" data-category="thriller">Thriller</a></li>
+        </ul>
+      </div>
+      <main class="card-container">
+        <div class="movie-container" id="movie-container"></div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Om Oss</h4>
+          <p>Moviemagazine är din destination för de senaste filmerna</p>
+        </div>
+        <div class="footer-section">
+          <h4>Kontakt</h4>
+          <p>Email: info@moviemagazine.se</p>
+          <p>Telefon: 012-345 67 89</p>
+          <p>Adress: Filmvägen 1, 123 45 Filmstaden</p>
+        </div>
+        <div class="footer-section">
+          <h4>Följ Oss</h4>
+          <p>
+            <a href="https://www.linkedin.com/in/erik-persson-081128222/"
+              >Linkedin</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://github.com/senderman72?tab=overview&from=2024-06-01&to=2024-06-03"
+              >Github</a
+            >
+          </p>
+          <p><a href="#">Instagram</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moviemagazine. Alla rättigheter förbehållna.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Om Oss</h4>
-        <p>Moviemagazine är din destination för de senaste filmerna</p>
-      </div>
-
-      <div class="footer-section">
-        <h4>Kontakt</h4>
-        <p>Email: info@moviemagazine.se</p>
-        <p>Telefon: 012-345 67 89</p>
-        <p>Adress: Filmvägen 1, 123 45 Filmstaden</p>
-      </div>
-      <div class="footer-section">
-        <h4>Följ Oss</h4>
-        <p><a href="#">Facebook</a></p>
-        <p><a href="#">Twitter</a></p>
-        <p><a href="#">Instagram</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Moviemagazine. Alla rättigheter förbehållna.</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
 </html>
