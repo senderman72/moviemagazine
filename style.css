@@ -26,7 +26,6 @@ body {
 
 .nav-bar {
   width: 100%;
-  height: auto;
   background-color: #333;
   border-bottom: 1px solid #f4c10f;
   display: flex;
@@ -227,6 +226,10 @@ body {
 
   .maincontent {
     grid-template-columns: 1fr;
+  }
+
+  .nav-bar {
+    flex-direction: column;
   }
 
   .sidebar {
